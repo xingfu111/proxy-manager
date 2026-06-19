@@ -9,7 +9,6 @@
 #   ./proxy-manager http status
 #   ./proxy-manager s5 stop
 # ================================================================
-# GitHub: https://github.com/你的用户名/gost-proxy-manager
 # License: MIT
 # ================================================================
 
