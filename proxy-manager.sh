@@ -4,10 +4,7 @@
 # 一键管理 HTTPS / HTTP / SOCKS5 代理，基于 Gost + Docker
 # ================================================================
 # 用法:
-#   ./proxy-manager           # 进入交互式菜单
-#   ./proxy-manager https install [端口] [用户名] [密码]
-#   ./proxy-manager http status
-#   ./proxy-manager s5 stop
+
 # ================================================================
 # License: MIT
 # ================================================================
@@ -219,7 +216,6 @@ do_install() {
         [ "$NEED_CERT" -eq 1 ] && echo -e "📅 证书有效期: 10 年"
         echo -e "📂 配置文件目录: $CONFIG_DIR"
         echo -e "💡 管理命令: proxy-manager $service [status|stop|start|restart|change|uninstall]"
-        echo -e "💡 进入管理面板: proxy-manager"
     else
         print_error "容器启动失败，请检查 Docker 日志"
         exit 1
